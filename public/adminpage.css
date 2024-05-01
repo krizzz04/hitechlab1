@@ -1,0 +1,370 @@
+header {
+    position: relative;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px; /* Increased padding for header */
+    font-size: 20px; /* Increased font size for header */
+    height: 100px;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 190px; /* Adjust this value to position the line */
+    border-left: 3px solid #333; /* Adjust the width and color as needed */
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Increased padding for header */
+    background-color: #ffffff;
+    color: #333;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: relative;
+  }
+  
+  /* Logo styling */
+  .logo {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+  .servicesdetails{
+    position: absolute;
+    padding-right: 20px;
+    font-weight: bold;
+    padding-left: 180px;
+    color: rgb(0, 0, 185);
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  .nav {
+    display: flex;
+    justify-content: center; /* Center the nav links horizontally */
+    align-items: center;
+  }
+  
+  /* Navigation list styling */
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display as a row by default */
+  }
+  .navdiv {
+     position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick the navbar to the top of the viewport */
+    background-color: rgb(0, 0, 185); /* Background color for the navbar */
+    padding: 15px 20px; /* Padding for the navbar */
+    z-index: 1;
+  }
+  
+  /* Styling for navigation links */
+  .nav li {
+    margin-right: 20px; /* Add right margin for spacing */
+    transition: margin-right 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  /* Styling for navigation links */
+  .nav li {
+    margin-right: 20px; /* Add right margin for spacing */
+    transition: margin-right 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: white; /* Set text color to white */
+    padding: 10px 20px; /* Adjust padding */
+    border-top-left-radius: 5px; /* Rounded corners */
+    border-top-right-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  }
+  
+  /* Hover effect */
+  .nav li a:hover {
+    background-color: #b3d9ff; /* Light blue background color on hover */
+    color: #fff; /* Change text color to white on hover */
+    padding-bottom: 16px;
+  }
+  
+  /* Active link styling */
+  .nav li.active a {
+    background-color: #ffffff; /* Light blue background color for active link */
+    color: #333; /* Change text color for active link */
+    padding-bottom: 16px;
+    margin-bottom: -6px; /* Adjust margin to compensate for padding change */
+  }
+ .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Or specify a specific height */
+  }
+
+  .upload-admin {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 400px; /* Adjust as needed */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .upload-admin input[type="tel"] {
+    font-size: large;
+    color: rgb(0, 0, 185);
+    padding-left: 40px; /* Adjust according to your icon size */
+    background-image: url('phone_icon.png'); /* Replace 'phone_icon.png' with the path to your icon */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust the position of the icon */
+    border-radius: 10px;
+  }
+  
+  .upload-admin input[type="tel"],
+  .upload-admin input[type="file"],
+  .upload-admin button {
+    margin: 10px 0; /* Add spacing between elements */
+    padding: 10px; /* Add padding for better appearance */
+    width: 100%; /* Make elements fill the container */
+    text-align: center;
+  }
+  
+  .upload-admin input[type="file"],
+  .upload-admin button {
+    cursor: pointer; /* Change cursor to pointer for better usability */
+  }
+  
+  /* Style for the label associated with the file upload input */
+  .upload-admin label {
+    cursor: pointer; /* Change cursor to pointer for better usability */
+  }
+  
+  /* Style for the upload button */
+  .upload-admin button {
+    background-color: rgb(0, 0, 185); /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px; /* Increase height */
+  }
+  
+  .upload-admin button:hover {
+    background-color:  rgb(81, 81, 236); /* Darker shade of green */
+    cursor: pointer;
+  }
+  
+
+  
+  .input-container {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    border-radius: 10px;
+  }
+  
+  .input-container i {
+    position: absolute;
+    left: 10px; /* Adjust according to your design */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+  
+  /* Style for the toggle switch */
+  .toggle-container {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    margin-top: 0; /* Add spacing between toggle and amount input */
+  }
+  
+  .toggle-container input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 34px;
+    background-color: #4CAF50; /* Green when toggle is off */
+    border-radius: 17px; /* Half of the height for a rounded appearance */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-container label:before {
+    content: 'Paid';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+  }
+  
+  .toggle-container input[type="checkbox"]:checked + label {
+    background-color: #FF5733; /* Red when toggle is on */
+  }
+  
+  .toggle-container input[type="checkbox"]:checked + label:before {
+    content: 'Unpaid';
+  }
+  
+  #amount-input {
+    margin-top: 25px; /* Add spacing between amount input and button */
+  }
+  
+  #amount-input input[type="text"] {
+    padding: 10px; /* Add padding for better appearance */
+    width: 100%; /* Make the input fill the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  #amount-input span {
+    font-size: 18px; /* Adjust font size of rupee symbol */
+    padding: 10px; /* Add padding for better appearance */
+  }
+  
+  
+  
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 14px;
+    background: #fff;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: Poppins, sans-serif;
+  }
+  
+  #footer {
+    background: #f7f7f7 url(https://arena.km.ua/wp-content/uploads/3538533.jpg) center/cover;
+    padding: 7rem 3rem 8rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logo-footer {
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
+  .social-links,
+  .useful-link,
+  .address {
+    flex: 1;
+    margin: 10px; /* Adjust spacing between elements */
+    width: fit-content;
+  }
+  
+  .social-links h2,
+  .useful-link h2,
+  .address h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #82074a;
+  }
+  
+  .social-icons,
+  .use-links,
+  .address-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons a,
+  .use-links a,
+  .address-links a {
+    color: #777777;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover,
+  .use-links a:hover,
+  .address-links a:hover {
+    color: #000;
+  }
+  
+  .social-icons a i {
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    color: #82074a;
+    font-size: 16px;
+    margin-right: 24px; /* Increased margin-right for more space */
+  }
+  
+  .copy-right-sec {
+    height: 40px;
+    background: #2806b1;
+    color: #fff;
+    text-align: center;
+    padding-top: 1px;
+  }
+  
+  .copy-right-sec a {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+  }

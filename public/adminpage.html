@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="adminpage.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Logo" class="logo" width="100">
+    </div>
+    <div class="servicesdetails">
+      <h7>LAB</h7><br>
+      <h7>X-RAY</h7><br>
+      <h7>ECG</h7><br>
+      <h7>OPG</h7><br>
+    </div>
+    
+</header>
+<div class="navdiv">
+  <nav class="nav">
+    <div class="menu-overlay" id="menu-overlay">
+      <ul class="menu">
+        <li class="nav-item"><a href="lab.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="adminpage.html" class="nav-link" id="admin-link">Admin</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+</div>
+<ul class="menu-admin">
+  <li class="admin-item"><a href="admin">appointment</a></li>
+  <li class="admin-item"><a href="#">Admin</a></li>
+  <li class="admin-item"><a href="#">About</a></li>
+</ul>
+    <div class="center-container">
+      <div class="upload-admin">
+        <div class="input-container">
+          <input type="tel" placeholder="Enter Phone Number"> <!-- Phone number input -->
+          <i class="fas fa-phone"></i> <!-- Phone icon -->
+        </div>
+        <input type="file" id="file-upload"> <!-- Upload document option -->
+        <div class="toggle-container">
+          <input type="checkbox" id="paid-unpaid"> <!-- Paid or unpaid option as a checkbox -->
+          <label for="paid-unpaid"></label> <!-- Label for the paid/unpaid checkbox -->
+        </div>
+        <div id="amount-input" style="display: none;"> <!-- Hidden input box for amount -->
+          <span>&#8377;</span> <!-- Rupee symbol -->
+          <input type="text" placeholder="Amount" style="width: 80%;"> <!-- Amount input -->
+        </div>
+        <button type="submit">Upload</button> <!-- Upload button -->
+      </div>
+    </div>
+      
+      
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="index.html"><img src="Picsart_24-03-02_17-26-46-983.png" alt="" class="img-fluid logo-footer"></a>
+                        <div class="footer-about">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>
+                        </div>
+      
+            </div>
+            <div class="col-md-3">
+              <div class="useful-link">
+                <h2>Useful Links</h2>
+                <img src="" alt="" class="img-fluid">
+                <div class="use-links">
+                  <li><a href="index.html"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                  <li><a href="about.html"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-md-3">
+              <div class="social-links">
+                  <h2>Follow Us</h2>
+                  <!-- Replace src attribute with appropriate Font Awesome classes -->
+                  <img src="" alt="">
+                  <div class="social-icons">
+                      <!-- Font Awesome icon classes for Facebook and Instagram -->
+                      <li><a href=""><i class="fab fa-facebook-f"></i> Facebook</a></li><br>
+                      <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                  </div>
+              </div>
+          </div>
+                      </div>
+            <div class="col-md-3">
+              <div class="address">
+                <h2>Address</h2>
+                <img src="" alt="" class="img-fluid">
+                <div class="address-links">
+                  <li class="address1"><i class="fa-solid fa-location-dot"></i> payyannur-
+                    Kannur Dt 
+                     Kerala 670308</li>
+                     <li><a href=""><i class="fa-solid fa-phone"></i> +91 90904500112</a></li>
+                     <li><a href=""><i class="fa-solid fa-envelope"></i> mail@gmail.com</a></li>
+                </div>
+              </div>
+            </div>
+                    
+          </div>
+        </div>
+      </footer>
+      <section id="copy-right">
+        <div class="copy-right-sec"> 
+          <p><i class="fa-solid fa-copyright"></i>    An <a href="https://orinoco.netlify.app/">Orinoco</a> product</p>
+      
+      </section>
+      <script>
+        document.getElementById('paid-unpaid').addEventListener('change', function() {
+        var amountInput = document.getElementById('amount-input');
+        amountInput.style.display = this.checked ? 'block' : 'none';
+        });
+
+      </script>
+      <script src="adminpage.js"></script>
+      <script src="script1.js"></script>
+</body>
+</html>
