@@ -62,7 +62,6 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
       document.getElementById("pastDayMessage").style.display = "none";
       // Assuming successful submission for demonstration
       this.submit(); // Submit the form
-      document.getElementById("bookingForm").reset(); // Reset the form
   }
 });
 
@@ -225,21 +224,21 @@ function countUp(elementId, targetValue, duration, speed) {
 
 
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var adminLink = document.getElementById('admin-link');
-    adminLink.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent the default link behavior
+//   document.addEventListener('DOMContentLoaded', function () {
+//     var adminLink = document.getElementById('admin-link');
+//     adminLink.addEventListener('click', function (event) {
+//         event.preventDefault(); // Prevent the default link behavior
         
-        var password = prompt("Enter the admin password:");
+//         var password = prompt("Enter the admin password:");
         
-        // Check if the password is correct
-        if (password === "hitech") { // Replace "yourpassword" with your actual password
-            window.location.href = adminLink.getAttribute('href'); // Redirect to the admin page
-        } else {
-            alert("Incorrect password!"); // Show an alert if the password is incorrect
-        }
-    });
-});
+//         // Check if the password is correct
+//         if (password === "hitech") { // Replace "yourpassword" with your actual password
+//             window.location.href = adminLink.getAttribute('href'); // Redirect to the admin page
+//         } else {
+//             alert("Incorrect password!"); // Show an alert if the password is incorrect
+//         }
+//     });
+// });
 
 
 document.addEventListener("DOMContentLoaded", function () {

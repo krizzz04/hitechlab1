@@ -64,21 +64,22 @@
         }
 
         function deleteAppointment(appointmentId) {
-            fetch(`/appointments/${appointmentId}`, {
-                method: 'DELETE',
-            })
-            .then(response => {
-                if (response.ok) {
-                    // If deletion was successful, reload the page to reflect the changes
-                    window.location.reload();
-                } else {
-                    console.error('Failed to delete appointment');
-                }
-            })
-            .catch(error => {
-                console.error('Error deleting appointment:', error);
-            });
+    fetch(`/appointments/${appointmentId}`, {
+        method: 'DELETE'
+    })
+    .then(response => {
+        if (response.ok) {
+            // If deletion was successful, reload the page to reflect the changes
+            window.location.reload();
+        } else {
+            console.error('Failed to delete appointment');
         }
+    })
+    .catch(error => {
+        console.error('Error deleting appointment:', error);
+    });
+}
+
     </script>
 </body>
 </html>
